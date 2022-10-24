@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    
+}
+body{
+    overflow-x: hidden;
+}
+header .max-width{
+    display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+header{
+    position: fixed;
+	width: 100%;
+	z-index: 2;
+	font-family: sans-serif;
+    justify-content: space-between;
+	transition: 0.3s;
+    padding: 5px 100px;
+}
+header.sticky{
+    background-color: rgb(87, 71, 150) ;
+}
+.logo{
+	font-size: 32px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 600;
+	border: 5px double rgb(118, 205, 255);
+	padding: 3px;
+    transition: 0.3s;
+    width: 260px;
+	border-radius: 15px;
+}
+ .logo a{
+    color: rgb(131, 241, 255);
+ }
+ .logo a span{
+     color: rgb(160, 136, 255);
+ }
+ 
+ header.sticky .logo{
+    border: 0;
+ }
+ header.sticky a span{
+    color: white ;
+}
+header ul{
+    list-style: none;
+    font-family: sans-serif;
+    color: white;
+}
+ul li{
+    display: inline-block;
+    margin: 20px 10px 0 20px;
+}
+ul li a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    transition: 0.6s ease;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+ul li a:hover{
+   text-decoration: underline;
+   background-color: rgb(136, 154, 255);
+   color: rgb(0, 35, 100) ;
+}
+.home{
+    padding: 50px 0;
+    background-color: rgb(6, 156, 26);
+    
+}
+.home .max-width{
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+.home .content-left{
+    width: 30%;
+    margin-left: 50px;
+}
+.home .content-left .text{
+    font-size: 32px;
+    color: rgb(240, 240, 240);
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 7px 3px 20px rgb(32, 32, 32);
+}
