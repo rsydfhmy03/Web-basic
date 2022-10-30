@@ -125,6 +125,9 @@ ul li a:hover{
     width: 400px;
     
 }
+html {
+	scroll-behavior: smooth;
+}
 .toggle input{
 	position: absolute;
 	width: 40px;
@@ -204,9 +207,23 @@ main{
     overflow: auto;
     margin: 0 auto;
     /* float: none; */
+    padding: 10px;
+    width: 90%;
+    place-items: center;
 
 }
-
+.content-w1{
+    box-shadow: 0 4px 8px 0 rgba(11, 8, 44, 0.2);
+    border-radius: 5px;
+    margin: 50px 0px 50px 0px;
+    border: 3px solid;
+    border-top-color: #919191;
+	border-right-color: #111111;
+	border-bottom-color: #4ee717;
+	border-left-color: #00c8eb;
+    height: 500px;
+	overflow: auto;
+}
 /* .content-w1{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
    	border-radius: 5px;
@@ -233,10 +250,10 @@ main{
 	overflow: auto;
 } */
 
-/* *#content-h{
+*#content-h{
 	text-shadow: 4px 4px 3px #e9f1f3;
 	text-transform: capitalize;
-} */
+}
 
 h1,h2{
 	text-align: center;
@@ -365,10 +382,41 @@ hr{
 	animation-name: fade;
 	animation-duration: 10.5s;
 }
+@keyframes fade {
+	from {
+		opacity: 0.9
+	}
+	to {
+		opacity: 5
+	}
+}
+.c-left{
+	width: 40%;
+	padding-left: 10px;
+}
+
+.c-right{
+	width: 60%;
+	padding-left: 30px;
+}
+.clearfix::after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+
+.form-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	margin: 0 auto;
+}
 /* main #content {
     float: left;
     width: 75%;
 }
+
 main .content img{
     border-radius: 5px;
     margin-bottom: 20px;
@@ -388,13 +436,151 @@ main aside section img:hover {
     opacity: 0.7;
 } */
 
-
-footer {
-	padding: 10px;
-	color: white;
-	background-color: #027abb;
-	text-align: center;
+.form-footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 10px;
+	margin: 0 auto;
 }
+
+.input-email {
+	padding: 15px;
+	border: none;
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	width: 335px;	
+	margin: 15px 5px 5px 15px;
+}
+
+.button-kirim {
+	padding: 12px;
+	border: none;
+	border: solid 1px #ccc;
+	border-radius: 10px;
+	background-color: #ff7800;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 10px;
+	width: 80px;	
+	margin: 15px 5px 5px 15px;
+}
+
+.button-kirim:hover {
+	border: none;
+	border: solid 1px #ccc;
+	background-color: #ffc000;
+}
+
+.sosmed {
+	text-align: center;
+	margin: 10px 0;
+	margin: 0 auto;
+}
+
+.sosmed a {
+	margin-top: 0px;
+}
+
+.sosmed h2 {
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	color: #fff43f;
+}
+
+.logoig {
+	background-color: #ff2aac;
+	height: 50px;
+	width: 50px;
+	border-color: white;
+	border-radius: 20px;
+	border-style: inset;
+	margin-bottom: -5px;
+}
+
+.logowa {
+	background-color: #239b76;
+	height: 50px;
+	width: 50px;
+	border-color: white;
+	border-radius: 20px;
+	border-style: inset;
+	margin-bottom: -5px;
+}
+
+.logocod {
+	background-color: #ff2a2a;
+	height: 50px;
+	width: 50px;
+	border-color: white;
+	border-radius: 20px;
+	border-style: inset;
+	margin-bottom: -5px;
+}
+
+.btn {
+	color: white;
+	display: inline-block;
+	opacity: 0.8;
+	text-align: center;
+	border-radius: 25px;
+	margin: 15px 5px;
+}
+
+.logoig:hover {
+	opacity: 1;
+	border-radius: 25px;
+	height: 52px;
+	width: 52px;
+	border: solid 5px yellow;
+	border-radius: 20px;
+	border-style: outset;
+	position: relative;
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.logowa:hover {
+	opacity: 1;
+	border-radius: 25px;
+	height: 52px;
+	width: 52px;
+	border: solid 5px yellow;
+	border-radius: 20px;
+	border-style: outset;
+	position: relative;
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.logocod:hover {
+	opacity: 1;
+	border-radius: 25px;
+	height: 52px;
+	width: 52px;
+	border: solid 5px yellow;
+	border-radius: 20px;
+	border-style: outset;
+	position: relative;
+	width: 55px;
+	height: 55px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.c-aw{
+	text-align:justify;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+
 
 /* h2 {
     font: weight 800px; 
@@ -512,11 +698,11 @@ footer {
 
 .cf-right {	
  width: 2%;
- z-index: 998;
+ z-index: 989;
 }
 
 .scrollup {
- background-color: #ff7800;
+ background-color: #00eeff;
  height: 52px;
  width: 52px;
  border-radius: 15px;
